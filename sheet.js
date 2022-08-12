@@ -227,5 +227,6 @@ function calc(clickid){
 	text = document.getElementById("textbox").value;
 	const myArray = text.split(" ");
 	alert(text)
-	mycalc = text
+	sectionA = 
+	mycalc = 
 }
