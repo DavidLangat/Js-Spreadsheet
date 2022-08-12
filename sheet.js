@@ -219,8 +219,8 @@ localStorage.clear();
 }
 function calc(clickid){
 	var myid = clickid;
-	alert(myid)
 	text = document.getElementById("textbox")
 	const myArray = text.split(" ");
+	alert(text)
 	document.getElementById("myid").value = "Johnny";
 }
