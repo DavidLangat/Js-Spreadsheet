@@ -226,7 +226,13 @@ function calc(clickid){
 	var myid = clickid;
 	text = document.getElementById("textbox").value;
 	const myArray = text.split(" ");
-	alert(text)
-	sectionA = 
-	mycalc = 
+	sectionA = myArray[0].toString()
+	oper = myArray[1]
+	SectionB = myArray[2]
+
+	// mycalc = sectionA,oper,SectionB;
+
+	var myval = document.getElementById("sectionA").value;
+	alert(myval);
+
 }
