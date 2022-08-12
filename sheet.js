@@ -218,5 +218,6 @@ localStorage.clear();
 
 }
 function calc(clickid){
-  alert(clickid);
+	var myid = clickid;
+	document.getElementById("myid").value = " Johnny";
 }
