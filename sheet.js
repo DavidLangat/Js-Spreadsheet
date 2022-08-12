@@ -218,8 +218,9 @@ localStorage.clear();
 
 }
 function calc(clickid){
-	alert(1)
+	
 	var myid = clickid;
+	alert(myid)
 	text = document.getElementById("textbox")
 	const myArray = text.split(" ");
 	alert(text)
