@@ -24,7 +24,7 @@ function CreateTable(){
 		row.insertCell(-1).innerHTML = i;
 		for (var j=1; j< Columns; j++) {
 			var letter = String.fromCharCode("A".charCodeAt(0)+j-1);
-			row.insertCell(-1).innerHTML = "<input id='"+ letter+i +"'/>" + hiddenSpan;
+			row.insertCell(-1).innerHTML = "<input onclick='(this.id)" class='inputm' id='"+ letter+i +"'/>" + hiddenSpan;
 		}
 	}
 	
@@ -63,6 +63,7 @@ function Computerize(){
 		elm.onkeypress = function(event) {
 			var charCode = (event.charCode) ? event.charCode :
 				((event.which) ? event.which : event.keyCode);
+				alert(charCode)
 			if (charCode == 13 ) {
 				event.target.blur();
 			}
@@ -208,3 +209,13 @@ Computerize();
 })();
 
 })();
+function clearSpreadsheet(){
+
+	let inputs = [... document.querySelectorAll("[class^='inputm']")];
+
+inputs.forEach(i  => i.value = "");
+localStorage.clear();
+alert(3)
+
+
+}
