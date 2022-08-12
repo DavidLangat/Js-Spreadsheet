@@ -24,7 +24,7 @@ function CreateTable(){
 		row.insertCell(-1).innerHTML = i;
 		for (var j=1; j< Columns; j++) {
 			var letter = String.fromCharCode("A".charCodeAt(0)+j-1);
-			row.insertCell(-1).innerHTML = "<input onclick='(this.id)" class='inputm' id='"+ letter+i +"'/>" + hiddenSpan;
+			row.insertCell(-1).innerHTML = "<input onclick='calc(this.id)' class='inputm' id='"+ letter+i +"'/>" + hiddenSpan;
 		}
 	}
 	
@@ -215,7 +215,8 @@ function clearSpreadsheet(){
 
 inputs.forEach(i  => i.value = "");
 localStorage.clear();
-alert(3)
 
-
+}
+function calc(clickid){
+  alert(clickid);
 }
