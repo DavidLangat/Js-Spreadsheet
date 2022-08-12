@@ -219,5 +219,6 @@ localStorage.clear();
 }
 function calc(clickid){
 	var myid = clickid;
-	document.getElementById("myid").value = " Johnny";
+	alert(myid)
+	document.getElementById("myid").value = "Johnny";
 }
