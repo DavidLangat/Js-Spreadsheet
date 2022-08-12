@@ -217,11 +217,15 @@ inputs.forEach(i  => i.value = "");
 localStorage.clear();
 
 }
+var text = "";
+function mychange(){
+
+}
 function calc(clickid){
 	
 	var myid = clickid;
 	text = document.getElementById("textbox").value;
 	const myArray = text.split(" ");
 	alert(text)
-	document.getElementById("myid").value = "Johnny";
+	mycalc = text
 }
